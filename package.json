@@ -1,13 +1,17 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "BigBloopLeagueBot",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "tsc .\\src\\index.ts & node .\\src\\index.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tmi.js": "^1.8.5"
+  },
   "devDependencies": {
+    "@types/tmi.js": "^1.8.6",
     "typescript": "^5.5.3"
   },
   "private": true
